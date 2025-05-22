@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Delish</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6b3e26;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #6b3e26;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-item .content {
+      padding: 15px;
+    }
+
+    .menu-item h3 {
+      margin-bottom: 5px;
+      color: #6b3e26;
+    }
+
+    .menu-item p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #6b3e26;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .section h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Café Delish</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Café Delish</h1>
+    <p>Serving the freshest brews and tastiest bites in town. Come for the coffee, stay for the vibes.</p>
+  </section>
+
+  <section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Latte">
+        <div class="content">
+          <h3>Vanilla Latte</h3>
+          <p>Rich espresso blended with vanilla and steamed milk.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tayyib.pk%2Fproducts%2Fcroissants&psig=AOvVaw2Q8caT6Kv36mMynspHfCH1&ust=1747993328753000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCGoN3kto0DFQAAAAAdAAAAABAE" alt="Croissant">
+        <div class="content">
+          <h3>Butter Croissant</h3>
+          <p>Flaky, buttery, and baked fresh daily.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCappuccino&psig=AOvVaw3WNqU4P_FBhddvFqH4rhSw&ust=1747993242303000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJj_n7Xkto0DFQAAAAAdAAAAABAE\
+        " alt="Cappuccino">
+        <div class="content">
+          <h3>Cappuccino</h3>
+          <p>Perfect balance of espresso, steamed milk, and foam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+      Café Delish is a cozy neighborhood café offering hand-crafted coffee, artisanal pastries, and a relaxing atmosphere.
+      Whether you’re here for a quick bite or a long chat, our place is your place.
+    </p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto;">
+      📍 DHA Phase VIII<br />
+      📞 +92 333 1234567<br />
+      ✉️ hello@cafedelish.com
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Delish. All rights reserved.</p>
+  </footer>
+</body>
+</html>
